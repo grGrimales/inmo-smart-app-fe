@@ -1,9 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import PublicRoutes from './modules/public/publicRoutes';
- import Navbar from './components/common/Navbar';
  import './App.scss';
-import Footer from './components/common/Footer';
 import AuthRoutes from './modules/auth/authRoutes';
 // import PublicRoutes from './modules/public/publicRoutes';
 // import AuthRoutes from './modules/auth/authRoutes';
@@ -14,7 +12,6 @@ const App: React.FC = () => {
   return (
     <Router>
          <div className="flex flex-col min-h-screen">
-      <Navbar />
       <main className="flex-1">
         <Routes>
           {/* <Route path="/login/*" element={<AuthRoutes />} />
@@ -26,9 +23,10 @@ const App: React.FC = () => {
           <Route path="/*" element={<PublicRoutes />} />
           <Route path="/auth/*" element={<AuthRoutes />} />
 
+          
+
         </Routes>
       </main>
-      <Footer />
       </div>
     </Router>
   );
