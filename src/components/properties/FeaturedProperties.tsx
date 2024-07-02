@@ -1,4 +1,4 @@
-import placeholderImage from '../../assets/images/house.jpg'; // Asegúrate de que la ruta es correcta
+import placeholderImage from '../../assets/images/houses.jpg'; // Asegúrate de que la ruta es correcta
 import { Card, CardContent } from '../../components/ui/Card';
 import { Button } from '../ui/button';
 
@@ -15,7 +15,7 @@ const FeaturedProperties: React.FC = () => {
               width={400}
               height={250}
               alt="Property 1"
-              className="w-full h-auto rounded-t-md"
+              className="w-full h-auto rounded-t-md object-cover"
             />
             <CardContent className="p-4">
               <h3 className="text-lg font-bold mb-2">Luxurious Apartment in the City</h3>

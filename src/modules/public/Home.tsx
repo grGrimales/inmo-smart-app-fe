@@ -1,7 +1,9 @@
 import Input from '../../components/ui/Input'
 import SearchIcon from '../../components/icons/SearchIcon'
-import houseImage from '../../assets/images/house.jpg';
+import houseImage from '../../assets/images/family-home.jpg';
 import FeaturedProperties from '../../components/properties/FeaturedProperties';
+import { BrowseByCategory } from '../../components/properties/BrowseByCategory';
+import { OurClients } from '../../components/about-us/OurClients';
 
 export const Home = () => {
   return (
@@ -24,8 +26,6 @@ export const Home = () => {
           <div>
             <img
               src={houseImage}
-              width={600}
-              height={400}
               alt="Featured Property"
               className="w-full h-auto rounded-md shadow-md"
             />
@@ -34,6 +34,8 @@ export const Home = () => {
       </div>
     </section>
     <FeaturedProperties />
+    <BrowseByCategory/>
+    <OurClients/>
       </main>
   )
 }
